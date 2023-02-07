@@ -1,5 +1,5 @@
 {
-  "homepage":"https://faisallinq.github.io/barney-admin",
+  "homepage":"./",
   "name": "barney-admin",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run predeploy && gh-pages -d dist"
   },
   "dependencies": {
     "agora-react-uikit": "^1.2.0",
